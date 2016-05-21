@@ -1,0 +1,13 @@
+{
+    "name": "fero/mumble_group_link",
+    "description": "Mumble url button",
+    "type": "elgg-plugin",
+    "license": "GNU Affero Public License v3",
+    "authors": [
+        {
+            "name": "Luca Ferroni",
+            "email": "luca@befair.it"
+        }
+    ],
+    "require": {}
+}
