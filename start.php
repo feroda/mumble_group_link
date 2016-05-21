@@ -12,11 +12,12 @@ elgg_register_event_handler('init', 'system', function () {
                 return $menu;
             };
 
-			$url = "mumble://our.mumble-server.org/open-the-channel/{$params['entity']->guid}";
+            $url = "mumble://our.mumble-server.org/open-the-channel/{$params['entity']->guid}";
             $icon = elgg_view_icon("speech-bubble-alt-hover");
-            $item = new ElggMenuItem('mumble_url', $icon." ".elgg_echo('mumble:url'), $url);
+            $menu_entry = elgg_echo('mumble:url')." ".$icon;
+            $item = new ElggMenuItem('mumble_url', $menu_entry, $url);
             $item->addLinkClass('elgg-button elgg-button-action');
-			$menu[] = $item;
+            $menu[] = $item;
             return $menu;
     });
 });
